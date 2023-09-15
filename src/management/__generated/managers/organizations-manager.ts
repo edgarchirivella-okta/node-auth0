@@ -850,7 +850,7 @@ export class OrganizationsManager extends BaseAPI {
 
     const response = await this.request(
       {
-        path: `/organizations/{id}/client_grants`.replace(
+        path: `/organizations/{id}/client-grants`.replace(
           '{id}',
           encodeURIComponent(String(requestParameters.organization_id))
         ),
